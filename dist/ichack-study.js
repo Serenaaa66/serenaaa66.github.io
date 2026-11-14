@@ -2,11 +2,11 @@ const media = './assets/projects/ichack/';
 const figure = (file, width, height, caption, wide = false) => ({
   src: `${media}${file}`, width, height, caption, wide
 });
-// Monochrome SVGs sit on the same dark mat in either website theme; the SVG
-// ink no longer follows a conflicting operating-system colour preference.
-const darkFigure = (file, width, height, caption, wide = false) => ({
+// Reuse the theme-aware ink treatment: transparent backing, black on light
+// pages and light ink on dark pages, including the full-size image viewer.
+const inkFigure = (file, width, height, caption, wide = false) => ({
   ...figure(file, width, height, caption, wide),
-  background: '#111c35', darkSurface: true, viewerSurface: 'navy'
+  background: 'transparent', borderless: true, inkDrawing: true
 });
 const transparentFigure = (file, width, height, caption, wide = false) => ({
   ...figure(file, width, height, caption, wide),
@@ -46,7 +46,7 @@ export const ichackStudy = {
       title: 'One identity for a live weekend',
       intro: 'The system was designed for more than 900 attendees over a 48-hour event. Fantasy and fairytale became the shared theme, connecting digital communications with physical spaces and merchandise.',
       figures: [
-        darkFigure('problem-dark.svg', 1067, 406, 'The event identity brief', true)
+        inkFigure('problem-dark.svg', 1067, 406, 'The event identity brief', true)
       ]
     },
     {
@@ -54,7 +54,7 @@ export const ichackStudy = {
       title: 'A bookish character, a flexible palette',
       intro: 'Junicode and Ysabeau established the typographic pairing, with a textured wordmark adding an older character. Three core colours identify the hackspaces, while a fourth covers the wider event. Additional shades extend the palette across applications.',
       figures: [
-        darkFigure('fonts-v2-dark.svg', 509, 384, 'Junicode and Ysabeau type pairing'),
+        inkFigure('fonts-v2-dark.svg', 509, 384, 'Junicode and Ysabeau type pairing'),
         figure('colours-1.svg', 610, 260, 'Colour palette · Red and purple'),
         figure('colours-2.svg', 610, 259, 'Colour palette · Blue and green')
       ]
