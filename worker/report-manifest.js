@@ -71,5 +71,36 @@ export const reports = {
         "size": 1094054
       }
     ]
+  },
+  "/downloads/WHYYYYY_SPRAY.pdf": {
+    "filename": "WHYYYYY_SPRAY.pdf",
+    "size": 46758880,
+    "sha256": "2fef8e5e834302f19aeab6ee20ce83cfaa1f5e2b58731382eab1d00f83a6ca6c",
+    "parts": [
+      {
+        "path": "/assets/projects/spray/report/parts/part-01.bin",
+        "size": 8388608
+      },
+      {
+        "path": "/assets/projects/spray/report/parts/part-02.bin",
+        "size": 8388608
+      },
+      {
+        "path": "/assets/projects/spray/report/parts/part-03.bin",
+        "size": 8388608
+      },
+      {
+        "path": "/assets/projects/spray/report/parts/part-04.bin",
+        "size": 8388608
+      },
+      {
+        "path": "/assets/projects/spray/report/parts/part-05.bin",
+        "size": 8388608
+      },
+      {
+        "path": "/assets/projects/spray/report/parts/part-06.bin",
+        "size": 4815840
+      }
+    ]
   }
 };
