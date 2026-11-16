@@ -95,10 +95,8 @@ export const tallyStudy = {
       ]
     }
   ],
-  resourcesLabel: 'Films & project credits',
+  resourcesLabel: 'Project film',
   links: [
-    {label: 'Watch the final film · Suryansha Sheth', href: 'https://www.youtube.com/watch?v=ZbQ81tp5KtI'},
-    {label: 'Watch the visual and sonic identity', href: 'https://www.youtube.com/watch?v=QGgk8Qvl0Mc'},
-    {label: 'Original case study · Suryansha Sheth', href: 'https://suryansha.com/projects/tally'}
+    {label: 'Watch the final film', href: 'https://www.youtube.com/watch?v=ZbQ81tp5KtI'}
   ]
 };

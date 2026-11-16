@@ -627,5 +627,124 @@ export const reportPreviews = {
         "page": 18
       }
     ]
+  },
+  "spray": {
+    "title": "SPRAY",
+    "filename": "WHYYYYY_SPRAY.pdf",
+    "href": "/downloads/WHYYYYY_SPRAY.pdf",
+    "pages": [
+      {
+        "src": "/assets/projects/spray/report/page-01.webp",
+        "smallSrc": "/assets/projects/spray/report/page-01-small.webp",
+        "width": 1280,
+        "height": 906,
+        "caption": "SPRAY report · Page 01",
+        "page": 1
+      },
+      {
+        "src": "/assets/projects/spray/report/page-02.webp",
+        "smallSrc": "/assets/projects/spray/report/page-02-small.webp",
+        "width": 1280,
+        "height": 906,
+        "caption": "SPRAY report · Page 02",
+        "page": 2
+      },
+      {
+        "src": "/assets/projects/spray/report/page-03.webp",
+        "smallSrc": "/assets/projects/spray/report/page-03-small.webp",
+        "width": 1280,
+        "height": 906,
+        "caption": "SPRAY report · Page 03",
+        "page": 3
+      },
+      {
+        "src": "/assets/projects/spray/report/page-04.webp",
+        "smallSrc": "/assets/projects/spray/report/page-04-small.webp",
+        "width": 1280,
+        "height": 906,
+        "caption": "SPRAY report · Page 04",
+        "page": 4
+      },
+      {
+        "src": "/assets/projects/spray/report/page-05.webp",
+        "smallSrc": "/assets/projects/spray/report/page-05-small.webp",
+        "width": 1280,
+        "height": 906,
+        "caption": "SPRAY report · Page 05",
+        "page": 5
+      },
+      {
+        "src": "/assets/projects/spray/report/page-06.webp",
+        "smallSrc": "/assets/projects/spray/report/page-06-small.webp",
+        "width": 1280,
+        "height": 906,
+        "caption": "SPRAY report · Page 06",
+        "page": 6
+      },
+      {
+        "src": "/assets/projects/spray/report/page-07.webp",
+        "smallSrc": "/assets/projects/spray/report/page-07-small.webp",
+        "width": 1280,
+        "height": 906,
+        "caption": "SPRAY report · Page 07",
+        "page": 7
+      },
+      {
+        "src": "/assets/projects/spray/report/page-08.webp",
+        "smallSrc": "/assets/projects/spray/report/page-08-small.webp",
+        "width": 1280,
+        "height": 906,
+        "caption": "SPRAY report · Page 08",
+        "page": 8
+      },
+      {
+        "src": "/assets/projects/spray/report/page-09.webp",
+        "smallSrc": "/assets/projects/spray/report/page-09-small.webp",
+        "width": 1280,
+        "height": 906,
+        "caption": "SPRAY report · Page 09",
+        "page": 9
+      },
+      {
+        "src": "/assets/projects/spray/report/page-10.webp",
+        "smallSrc": "/assets/projects/spray/report/page-10-small.webp",
+        "width": 1280,
+        "height": 906,
+        "caption": "SPRAY report · Page 10",
+        "page": 10
+      },
+      {
+        "src": "/assets/projects/spray/report/page-11.webp",
+        "smallSrc": "/assets/projects/spray/report/page-11-small.webp",
+        "width": 1280,
+        "height": 906,
+        "caption": "SPRAY report · Page 11",
+        "page": 11
+      },
+      {
+        "src": "/assets/projects/spray/report/page-12.webp",
+        "smallSrc": "/assets/projects/spray/report/page-12-small.webp",
+        "width": 1280,
+        "height": 906,
+        "caption": "SPRAY report · Page 12",
+        "page": 12
+      },
+      {
+        "src": "/assets/projects/spray/report/page-13.webp",
+        "smallSrc": "/assets/projects/spray/report/page-13-small.webp",
+        "width": 1280,
+        "height": 906,
+        "caption": "SPRAY report · Page 13",
+        "page": 13
+      },
+      {
+        "src": "/assets/projects/spray/report/page-14.webp",
+        "smallSrc": "/assets/projects/spray/report/page-14-small.webp",
+        "width": 1280,
+        "height": 906,
+        "caption": "SPRAY report · Page 14",
+        "page": 14
+      }
+    ]
   }
 };

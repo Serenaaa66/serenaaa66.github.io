@@ -83,7 +83,7 @@ test('missing report assets give a recoverable response', async () => {
 });
 
 test('each preview has all pages and both image sizes', async () => {
-  const pageCounts = {sedan: 16, battery: 13, sustainable: 28, fea: 18};
+  const pageCounts = {sedan: 16, battery: 13, sustainable: 28, fea: 18, spray: 14};
   for (const [key, report] of Object.entries(reportPreviews)) {
     assert.equal(report.pages.length, pageCounts[key]);
     assert.equal(reports[report.href].filename, report.filename);

@@ -16,6 +16,7 @@ REPORTS = {
     "battery": ("a-quiet-place", "Battery Cold Plate", "Siyi_Yu_Thermofluids_Battery.pdf"),
     "sustainable": ("soft-signals", "Aircraft Seat", "Siyi_Yu_Sustainable_Design_Engineering.pdf"),
     "fea": ("common-ground", "Running Blade FEA", "FEA_Siyi_Yu.pdf"),
+    "spray": ("spray", "SPRAY", "WHYYYYY_SPRAY.pdf"),
 }
 PART_SIZE = 8 * 1024 * 1024
 
