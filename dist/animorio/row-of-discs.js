@@ -78,9 +78,12 @@ function copertina(f){
     g.fillStyle=f.coverInk||'#f5f2e8';g.textAlign='left';g.textBaseline='alphabetic';
     g.shadowColor=f.coverInk?'transparent':'rgba(0,0,0,.45)';g.shadowBlur=4;g.shadowOffsetY=1;
     const title=f.discTitle||f.name;
-    g.font=canvasFont(116,400,'title');
-    const titleSize=116*Math.min(1,N*.66/g.measureText(title).width);
-    g.font=canvasFont(titleSize,400,'title');g.fillText(title,N*.2,N*.24);
+    const titleLines=f.discTitleLines?.length?f.discTitleLines:[title];
+    const baseTitleSize=titleLines.length>1?84:116;
+    g.font=canvasFont(baseTitleSize,400,'title');
+    const titleSize=baseTitleSize*Math.min(1,N*.66/Math.max(...titleLines.map(line=>g.measureText(line).width)));
+    g.font=canvasFont(titleSize,400,'title');
+    titleLines.forEach((line,index)=>g.fillText(line,N*.2,N*.24-(titleLines.length-1-index)*titleSize*.9));
     g.font=canvasFont(18,400);g.fillText(f.discSubtitle||(f.demo?'LISTENING ROOM / ARCHIVE STUDY':f.category.toUpperCase()),N*.2,N*.28);
     g.save();g.translate(m,m);g.font=canvasFont(22,400);
     scriviIntorno(g,`${f.discTitle||f.name}     ${f.anno}     LISTENING ROOM`,N*.445,-1.9);g.restore();

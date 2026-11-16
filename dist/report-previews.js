@@ -629,7 +629,7 @@ export const reportPreviews = {
     ]
   },
   "spray": {
-    "title": "SPRAY",
+    "title": "WHYYYYY SPRAY",
     "filename": "WHYYYYY_SPRAY.pdf",
     "href": "/downloads/WHYYYYY_SPRAY.pdf",
     "pages": [
@@ -638,7 +638,7 @@ export const reportPreviews = {
         "smallSrc": "/assets/projects/spray/report/page-01-small.webp",
         "width": 1280,
         "height": 906,
-        "caption": "SPRAY report · Page 01",
+        "caption": "WHYYYYY SPRAY report · Page 01",
         "page": 1
       },
       {
@@ -646,7 +646,7 @@ export const reportPreviews = {
         "smallSrc": "/assets/projects/spray/report/page-02-small.webp",
         "width": 1280,
         "height": 906,
-        "caption": "SPRAY report · Page 02",
+        "caption": "WHYYYYY SPRAY report · Page 02",
         "page": 2
       },
       {
@@ -654,7 +654,7 @@ export const reportPreviews = {
         "smallSrc": "/assets/projects/spray/report/page-03-small.webp",
         "width": 1280,
         "height": 906,
-        "caption": "SPRAY report · Page 03",
+        "caption": "WHYYYYY SPRAY report · Page 03",
         "page": 3
       },
       {
@@ -662,7 +662,7 @@ export const reportPreviews = {
         "smallSrc": "/assets/projects/spray/report/page-04-small.webp",
         "width": 1280,
         "height": 906,
-        "caption": "SPRAY report · Page 04",
+        "caption": "WHYYYYY SPRAY report · Page 04",
         "page": 4
       },
       {
@@ -670,7 +670,7 @@ export const reportPreviews = {
         "smallSrc": "/assets/projects/spray/report/page-05-small.webp",
         "width": 1280,
         "height": 906,
-        "caption": "SPRAY report · Page 05",
+        "caption": "WHYYYYY SPRAY report · Page 05",
         "page": 5
       },
       {
@@ -678,7 +678,7 @@ export const reportPreviews = {
         "smallSrc": "/assets/projects/spray/report/page-06-small.webp",
         "width": 1280,
         "height": 906,
-        "caption": "SPRAY report · Page 06",
+        "caption": "WHYYYYY SPRAY report · Page 06",
         "page": 6
       },
       {
@@ -686,7 +686,7 @@ export const reportPreviews = {
         "smallSrc": "/assets/projects/spray/report/page-07-small.webp",
         "width": 1280,
         "height": 906,
-        "caption": "SPRAY report · Page 07",
+        "caption": "WHYYYYY SPRAY report · Page 07",
         "page": 7
       },
       {
@@ -694,7 +694,7 @@ export const reportPreviews = {
         "smallSrc": "/assets/projects/spray/report/page-08-small.webp",
         "width": 1280,
         "height": 906,
-        "caption": "SPRAY report · Page 08",
+        "caption": "WHYYYYY SPRAY report · Page 08",
         "page": 8
       },
       {
@@ -702,7 +702,7 @@ export const reportPreviews = {
         "smallSrc": "/assets/projects/spray/report/page-09-small.webp",
         "width": 1280,
         "height": 906,
-        "caption": "SPRAY report · Page 09",
+        "caption": "WHYYYYY SPRAY report · Page 09",
         "page": 9
       },
       {
@@ -710,7 +710,7 @@ export const reportPreviews = {
         "smallSrc": "/assets/projects/spray/report/page-10-small.webp",
         "width": 1280,
         "height": 906,
-        "caption": "SPRAY report · Page 10",
+        "caption": "WHYYYYY SPRAY report · Page 10",
         "page": 10
       },
       {
@@ -718,7 +718,7 @@ export const reportPreviews = {
         "smallSrc": "/assets/projects/spray/report/page-11-small.webp",
         "width": 1280,
         "height": 906,
-        "caption": "SPRAY report · Page 11",
+        "caption": "WHYYYYY SPRAY report · Page 11",
         "page": 11
       },
       {
@@ -726,7 +726,7 @@ export const reportPreviews = {
         "smallSrc": "/assets/projects/spray/report/page-12-small.webp",
         "width": 1280,
         "height": 906,
-        "caption": "SPRAY report · Page 12",
+        "caption": "WHYYYYY SPRAY report · Page 12",
         "page": 12
       },
       {
@@ -734,7 +734,7 @@ export const reportPreviews = {
         "smallSrc": "/assets/projects/spray/report/page-13-small.webp",
         "width": 1280,
         "height": 906,
-        "caption": "SPRAY report · Page 13",
+        "caption": "WHYYYYY SPRAY report · Page 13",
         "page": 13
       },
       {
@@ -742,7 +742,7 @@ export const reportPreviews = {
         "smallSrc": "/assets/projects/spray/report/page-14-small.webp",
         "width": 1280,
         "height": 906,
-        "caption": "SPRAY report · Page 14",
+        "caption": "WHYYYYY SPRAY report · Page 14",
         "page": 14
       }
     ]
