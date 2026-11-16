@@ -8,16 +8,16 @@ const report=reportPreviews.spray;
 
 export const sprayProject={
   id:'spray',art:9,demo:false,
-  name:'SPRAY',discTitle:'SPRAY',discSubtitle:'PLAYFUL COMMUTER EXPERIENCES',
+  name:'WHYYYYY SPRAY',discTitle:'WHYYYYY SPRAY',discTitleLines:['WHYYYYY','SPRAY'],discSubtitle:'PLAYFUL COMMUTER EXPERIENCES',
   year:'2025',category:'Human-Centred Design Engineering',
   cover:media+'fountain-concept.webp',coverInk:'#202320',
   coverCrop:{fit:'disc',zoom:1.06,background:'#dce7e5'},
   hero:media+'fountain-concept.webp',heroFit:'contain',
-  heroAlt:'SPRAY fountain concept with eight water jets and ground buttons surrounding four player statues',
+  heroAlt:'WHYYYYY SPRAY fountain concept with eight water jets and ground buttons surrounding four player statues',
   overview:'A walk-up fountain memory game designed around waiting commuters',
   description:'User research and iterative prototypes turn water, light and sound into a short, shared moment of play.',
   headline:'A little play between trains.',
-  lede:'SPRAY is a walk-up fountain memory game for commuters waiting at train stations. Ground buttons turn sequences of water, light and sound into a short, shared moment of play, shaped for tired people with bags to carry and a train to catch.',
+  lede:'WHYYYYY SPRAY is a walk-up fountain memory game for commuters waiting at train stations. Ground buttons turn sequences of water, light and sound into a short, shared moment of play, shaped for tired people with bags to carry and a train to catch.',
   collection:'Human-Centred Design',
   credits:[
     ['RESEARCH','Surveys · Journey Mapping · User Testing'],
