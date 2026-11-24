@@ -33,9 +33,12 @@ export const ichackMetadata = {
   headline: 'A world built for 48 hours.',
   lede: 'An identity system for IC Hack 26, extending a fantasy theme across the live event, its spaces and the clothing worn by its community.',
   collection: 'Event Identity',
-  credits: [
-    ['EVENT', 'IC Hack 26'],
-    ['DATE', 'January 2026']
+  credits: [['', 'Event Marketing, Brand Identity, Content Creation']],
+  detailFields: [
+    ['YEAR', '2026'],
+    ['ROLE', 'Brand Strategy / Visual Communication'],
+    ['AUDIENCE', '800+ Hackers & 23 Corporates'],
+    ['IMPACT', 'Brand Activation at Scale']
   ]
 };
 

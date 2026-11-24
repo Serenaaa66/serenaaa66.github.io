@@ -88,7 +88,7 @@ export const projects = [
     caseStudy: ichackStudy
   },
   {
-    id:'battleship',art:7,demo:false,name:'Battleship',discTitle:'Battleship',discSubtitle:'TACTICAL NAVAL WARFARE',year:'2026',
+    id:'battleship',credits:[["","Game Design · UX/UI & Interaction Design · Innovation & Play Experience Design"]],art:7,demo:false,name:'Battleship',discTitle:'Battleship',discSubtitle:'TACTICAL NAVAL WARFARE',year:'2026',
     category:'Game Development / JavaScript',role:'Designer & Developer',
     cover:'./assets/games/battleship/assets/background pic.webp',coverCrop:{zoom:1,positionX:.5,positionY:.5},
     hero:'./assets/games/battleship/assets/background pic.webp',heroAlt:'Orange and blue naval fleets facing one another across the ocean',

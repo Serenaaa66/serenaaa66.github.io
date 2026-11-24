@@ -127,7 +127,7 @@ function fillDetail(id){
     }
     item.append(key,text);$('detail-credit').append(item);
   }
-  $('detail-fields').replaceChildren(...[['YEAR',p.year],['DISCIPLINE',p.category],['COLLECTION',p.collection?.toUpperCase()||(p.demo?'ARCHIVE STUDY / DEMO':'ORIGINAL CONCEPT')]].map(([k,v])=>{const div=document.createElement('div'),dt=document.createElement('dt'),dd=document.createElement('dd');dt.textContent=k;dd.textContent=v;const rule=document.createElement('span');rule.className='detail-field-rule';rule.setAttribute('aria-hidden','true');div.append(dt,dd,rule);return div;}));
+  $('detail-fields').replaceChildren(...(p.detailFields||[['YEAR',p.year],['DISCIPLINE',p.category],['COLLECTION',p.collection?.toUpperCase()||(p.demo?'ARCHIVE STUDY / DEMO':'ORIGINAL CONCEPT')]]).map(([k,v])=>{const div=document.createElement('div'),dt=document.createElement('dt'),dd=document.createElement('dd');dt.textContent=k;dd.textContent=v;const rule=document.createElement('span');rule.className='detail-field-rule';rule.setAttribute('aria-hidden','true');div.append(dt,dd,rule);return div;}));
   const hero=$('hero-image');hero.src=projectHero(p);hero.alt=p.heroAlt||`${p.name} project artwork`;hero.dataset.projectId=id;hero.dataset.fit=p.heroFit||'cover';hero.style.objectPosition=p.heroPosition||'50% 50%';hero.style.backgroundColor=p.heroBackground||'';
   $('image-caption').textContent=p.name.toUpperCase();$('image-id').textContent=`LISTENING ROOM / ${p.caseStudy?'CASE STUDY':id.toUpperCase()}`;
   $('story-title').textContent=p.headline;$('project-lede').textContent=p.lede;$('track-title').textContent=p.track||'';

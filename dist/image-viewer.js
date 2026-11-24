@@ -1,8 +1,8 @@
 import {loadTypography} from './typography.js';
 
 const params = new URLSearchParams(location.search);
-if (['ink', 'artwork'].includes(params.get('drawing'))) {
-  let theme = params.get('theme') === 'light' ? 'light' : 'dark';
+let theme = params.get('theme') === 'light' ? 'light' : 'dark';
+if (['ink', 'artwork', 'theme', 'brand'].includes(params.get('drawing'))) {
   // A figure may have been rendered before the visitor changed room themes.
   // Read the current preference when opening it, including cloned reel items.
   try {
@@ -17,10 +17,16 @@ if (params.get('surface') === 'navy') {
   document.documentElement.style.setProperty('--image-surface', '#111c35');
   document.querySelector('meta[name="theme-color"]').content = '#111c35';
 }
-const source = params.get('src') || '';
+const requestedSource = params.get('src') || '';
+const siteRoot = new URL('./', import.meta.url).pathname;
+let source = requestedSource.startsWith(siteRoot) ? '/' + requestedSource.slice(siteRoot.length) : '';
+const tallyDiagram=/^\/assets\/projects\/in-motion\/study\/(?:transaction-flow|confidence-journey|customer-indecision)-(?:light|dark)\.svg$/;
+if(params.get('drawing')==='theme'&&tallyDiagram.test(source))source=source.replace(/-(?:light|dark)\.svg$/,'-'+theme+'.svg');
+const displayedSource=siteRoot+source.slice(1);
 // Only existing same-origin project media can be displayed here.
 const match = /^\/assets\/projects\/([a-z0-9-]+)\/(?:study|report)\/[a-z0-9-]+\.(?:png|webp)$/.exec(source)
-  || /^\/assets\/projects\/(ichack)\/(?:problem-dark\.svg|fonts-v2-dark\.svg|logo-1600\.avif|tshirtgraphics-transparent\.webp)$/.exec(source);
+  || /^\/assets\/projects\/(ichack)\/(?:problem-dark\.svg|fonts-v2-dark\.svg|logo-1600\.avif|tshirtgraphics-transparent\.webp)$/.exec(source)
+  || (tallyDiagram.test(source)?[source,'in-motion']:null);
 if (match) {
   const caption = params.get('caption') || 'Engineering image';
   const image = document.getElementById('image');
@@ -30,12 +36,12 @@ if (match) {
   back.href = `./#project/${match[1]}`;
   back.textContent = '← Back to project';
   image.alt = caption;
-  image.src = source;
+  image.src = displayedSource;
   image.hidden = false;
   const inkWidth=Number(params.get('inkWidth'));
   if(params.get('drawing')==='artwork'&&source==='/assets/projects/ichack/logo-1600.avif'&&inkWidth>0&&inkWidth<=100){
     document.documentElement.style.setProperty('--art-ink-width',`${inkWidth}%`);
-    const ink=document.getElementById('ink-overlay');ink.src=source;ink.hidden=false;
+    const ink=document.getElementById('ink-overlay');ink.src=displayedSource;ink.hidden=false;
   }
   image.addEventListener('error', () => {image.hidden = true; document.getElementById('error').hidden = false;});
 } else document.getElementById('error').hidden = false;
