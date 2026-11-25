@@ -141,5 +141,6 @@
 
 .case-figure--crop img { aspect-ratio: var(--figure-ratio); height: auto; object-fit: cover; }
 
-/* Preserve coloured CAD materials; a fine light edge keeps black annotation ink legible in the dark room. */
-:root:not([data-theme="light"]) .case-figure--artwork img[src*="/first-order-robotics/"] { filter: drop-shadow(0 0 .75px #eee7d9); }
+
+.case-figure .robotics-ink-overlay { position:absolute;inset:0;width:100%;height:auto;filter:brightness(0) invert(.92);pointer-events:none; }
+:root[data-theme="light"] .robotics-ink-overlay { display:none; }

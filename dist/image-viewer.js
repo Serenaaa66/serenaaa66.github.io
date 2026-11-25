@@ -1,3 +1,4 @@
+import {mountRoboticsInkOverlay} from './robotics-ink.js';
 import {loadTypography} from './typography.js';
 
 const params = new URLSearchParams(location.search);
@@ -40,6 +41,7 @@ if (match) {
   image.alt = caption;
   image.src = displayedSource;
   image.hidden = false;
+  if(roboticsDiagram.test(source))mountRoboticsInkOverlay(image.parentElement,image);
   const inkWidth=Number(params.get('inkWidth'));
   if(params.get('drawing')==='artwork'&&source==='/assets/projects/ichack/logo-1600.avif'&&inkWidth>0&&inkWidth<=100){
     document.documentElement.style.setProperty('--art-ink-width',`${inkWidth}%`);

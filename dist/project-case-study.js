@@ -1,3 +1,4 @@
+import {mountRoboticsInkOverlay} from './robotics-ink.js';
 import {mountCaseImageStrip} from './case-image-strip.js';
 import {mountCaseVideos} from './case-video.js';
 import {renderPIDControl} from './pid-control.js';
@@ -112,6 +113,7 @@ function galleryFigure({crop, type, poster, src, darkSrc, smallSrc, width, heigh
     ink.className='case-artwork-ink';ink.alt='';ink.setAttribute('aria-hidden','true');
     link.append(ink);
   }
+  if(transparentArt)mountRoboticsInkOverlay(link,img);
   const legend = make('figcaption');
   legend.append(make('span', 'case-label', `${page ? 'Page' : 'Fig.'} ${String(page || index).padStart(2, '0')}`), make('span', '', page ? 'Engineering report' : caption));
   if(diagram)legend.append(make('span','case-diagram-hint','Swipe to read ↔'));
