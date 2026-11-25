@@ -36,7 +36,14 @@ export const firstOrderProject={
       ]},
     {label:'Hardware',title:'Every subsystem has to work together.',
       intro:'The team describes an omnidirectional platform with dribbling, kicking and chipping mechanisms. Mechanical, electronic, embedded and software work must meet at the interfaces: packaging, power, communication and control.',
-      figures:[{src:media+'controller-board.webp',width:861,height:627,caption:'Custom electronics · First Order controller board'},{src:media+'robot-chassis.webp',width:862,height:663,caption:'Mechanical platform · Exposed chassis, wheels and electronics'}]},
+      figures:[
+        {src:media+'controller-board.webp',width:861,height:627,caption:'Custom electronics · First Order controller board'},
+        {src:media+'robot-chassis.webp',width:862,height:663,caption:'Mechanical platform · Exposed chassis, wheels and electronics'},
+        {src:media+'coil-winding.webp',width:1367,height:856,caption:'Fabrication · Coil winding machine in use'},
+        {src:media+'kicker-assembly-transparent.webp',width:1521,height:533,transparentArt:true,borderless:true,caption:'Kicker system assembly · Front and angled CAD views'},
+        {src:media+'kicker-board-2025-transparent.webp',width:1208,height:861,transparentArt:true,borderless:true,caption:'Kicker 2025 version · PCB layout and component positions'},
+        {src:media+'capacitor-board.webp',width:1110,height:795,caption:'Capacitor board · Component arrangement and support structure'}
+      ]},
     {label:'Assembly details',title:'Understanding the interfaces.',
       intro:'The wheel module separates into the omniwheel, gear, mounting plates, motor and fasteners. The full robot exploded view puts those modules in context, alongside the electronics stack, quick-release hull, kicker and dribbler.',
       figureGroups:[
@@ -48,7 +55,17 @@ export const firstOrderProject={
       figures:[{src:media+'ball-spring-damper-transparent.webp',width:1182,height:521,wide:true,maxWidth:1182,diagram:true,transparentArt:true,borderless:true,caption:'Ball–spring-damper interaction · Ball leaving, steady state and ball crash-in'}]},
     {label:'Autonomy',title:'From sensing to movement.',
       intro:'The team’s 2025 technical paper documents hardware revisions and a new control and coordination codebase. Subsequent development described by the team adds onboard vision and telemetry to improve visibility into robot behaviour and support testing.',
-      figures:[{src:media+'football-robots.webp',width:757,height:546,wide:true,caption:'On the field · Football robots and the ball during a demonstration'}]},
+      notes:[
+        ['Motion visualisation','Velocity projections can be compared with the shadow markers showing actual next-frame positions. The motion view also illustrates ball tracking while moving along a line.'],
+        ['Path planning','The bisector planner visualises the candidate paths it considers: green indicates valid paths and red indicates invalid paths.']
+      ],
+      figureGroups:[
+        {label:'On the field',figures:[{src:media+'football-robots.webp',width:757,height:546,wide:true,caption:'On the field · Football robots and the ball during a demonstration'}]},
+        {label:'Motion & planning visualisations',figures:[
+          {src:media+'velocity-ball-tracking.webp',width:826,height:820,caption:'Velocity & ball tracking · Shadows show actual next-frame positions'},
+          {src:media+'bisector-planner.webp',width:765,height:778,caption:'Bisector planner · Green paths are valid; red paths are invalid'}
+        ]}
+      ]},
     {label:'Sharing the work',title:'Making robotics tangible.',
       intro:'A public demonstration brings the engineering into view: moving robots, a real ball and a shared playing field. The supplied photographs show how the system can become an accessible starting point for conversations about autonomous machines.',
       figures:[{src:media+'public-demo.webp',width:2560,height:1708,wide:true,caption:'Public demonstration · Visitors gather around the robot football pitch'}]}

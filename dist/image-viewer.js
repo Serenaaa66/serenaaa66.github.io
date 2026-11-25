@@ -23,7 +23,7 @@ const siteRoot = new URL('./', import.meta.url).pathname;
 let source = requestedSource.startsWith(siteRoot) ? '/' + requestedSource.slice(siteRoot.length) : '';
 const tallyDiagram=/^\/assets\/projects\/in-motion\/study\/(?:transaction-flow|confidence-journey|customer-indecision)-(?:light|dark)\.svg$/;
 if(params.get('drawing')==='theme'&&tallyDiagram.test(source))source=source.replace(/-(?:light|dark)\.svg$/,'-'+theme+'.svg');
-const roboticsDiagram=/^\/assets\/projects\/first-order-robotics\/(?:wheel-actuator-assembly|robot-design-2023-24|robot-design-2024-25|robot-exploded-assembly|ball-spring-damper)-transparent\.webp$/;
+const roboticsDiagram=/^\/assets\/projects\/first-order-robotics\/(?:wheel-actuator-assembly|robot-design-2023-24|robot-design-2024-25|robot-exploded-assembly|ball-spring-damper|kicker-assembly|kicker-board-2025)-transparent\.webp$/;
 const displayedSource=siteRoot+source.slice(1);
 // Only existing same-origin project media can be displayed here.
 const match = /^\/assets\/projects\/([a-z0-9-]+)\/(?:study|report)\/[a-z0-9-]+\.(?:png|webp)$/.exec(source)
