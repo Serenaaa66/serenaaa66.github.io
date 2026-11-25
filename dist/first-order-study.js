@@ -5,7 +5,7 @@ export const firstOrderProject={
   name:'First Order Robotics',discTitle:'First Order Robotics',
   discSubtitle:'AUTONOMOUS ROBOT FOOTBALL',year:'2025–2027',
   category:'Robotics / Systems Integration',role:'Hardware & Operations',
-  cover:media+'robot-open.webp',coverInk:'#f1eee7',
+  cover:media+'football-robots.webp',coverInk:'#f1eee7',
   coverCrop:{fit:'disc',zoom:1,positionX:.5,positionY:.5,background:'#171b1e'},
   hero:media+'robot-open.webp',heroAlt:'An open First Order football robot revealing its electronics, drive system and identification plate',
   heroFit:'contain',heroBackground:'#171b1e',
