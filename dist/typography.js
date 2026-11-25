@@ -22,7 +22,11 @@ export function canvasFont(size,weight=400,role='interface'){
 }
 export async function loadTypography(){
   let status={title:false,interface:false,label:false};
-  try{const response=await fetch('./font-status.json');if(response.ok)status={...status,...await response.json()};}catch{}
+  try{
+    const embedded=document.getElementById('font-status');
+    if(embedded)status={...status,...JSON.parse(embedded.textContent)};
+    else{const response=await fetch('./font-status.json');if(response.ok)status={...status,...await response.json()};}
+  }catch{}
   const available=[fontConfig.titleFallback,fontConfig.interfaceFallback];
   const roles=['title','interface','label'];
   const localPreview=status.personalPreview&&['127.0.0.1','localhost','[::1]'].includes(location.hostname);

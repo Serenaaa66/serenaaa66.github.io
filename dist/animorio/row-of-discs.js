@@ -466,7 +466,14 @@ const ready=Promise.all(nearby.map(prepareProject)).then(()=>{
   root.querySelector('[data-attesa]').classList.add('via');root.querySelector('[data-attesa]').setAttribute('aria-hidden','true');
   // First paint has priority. The remaining project-keyed maps use exactly the
   // same finish, loaded in the background before their discs are exposed.
-  setTimeout(()=>{if(!destroyed)FILM.filter(project=>!assetTasks.has(project.id)).forEach(prepareProject);},120);
+  setTimeout(async()=>{
+    // Demand loads remain immediate and share prepareProject's cached promise.
+    for(const project of FILM){
+      if(destroyed)return;
+      if(!assetTasks.has(project.id))await prepareProject(project).catch(console.warn);
+      await new Promise(resolve=>setTimeout(resolve,32));
+    }
+  },120);
 });
 const introArtwork=await openingArtwork;
 return {

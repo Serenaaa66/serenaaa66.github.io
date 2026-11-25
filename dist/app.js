@@ -5,7 +5,7 @@ mountThemeToggle();
 import {createRowOfDiscs} from './animorio/row-of-discs.js';
 import {createMeltingSheet} from './animorio/melting-sheet.js';
 import {projectOpeningTiming} from './project-transition.js';
-import {projectCover,projectHero,discThumbnail,preloadProjectCovers,ensureProjectCover} from './project-media.js';
+import {projectCover,projectHero,discThumbnail,ensureProjectCover} from './project-media.js';
 import {renderProjectCaseStudy} from './project-case-study.js';
 import {mountProjectReveals} from './project-reveals.js';
 import {DemoAudio} from './audio.js';
@@ -236,7 +236,7 @@ try{
     canInteract:()=>!openingInProgress&&state.page==='home'&&$('index-panel').hidden&&!$('profile-dialog').open,renderCard:p=>{if(!openingInProgress)projectInfo.show(p);},onChange:selectionChanged,onOpen:id=>openAlbum(id),onFrame:onRowFrame});
   nextFooter=row.createNextProjectFooter({section:$('next-project-section'),stage:$('next-project-stage'),host:$('next-disc-stage'),button:$('next-project'),scroller:detail,onAdvance:id=>openAlbum(id,true,true)});
   row.activate();diagnostics();
-  row.ready.then(()=>preloadProjectCovers(projects)).then(ids=>{document.body.dataset.coverProjects=ids.filter(Boolean).join(',');});
+  // Covers load with their discs through the bounded background queue.
   const beginOpening=()=>{
     openingInProgress=true;
     try{sessionStorage.setItem('lr-opening-seen','1');}catch{}
