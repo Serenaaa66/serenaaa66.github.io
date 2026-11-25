@@ -138,3 +138,5 @@
   .case-chapter-copy, .project-story.has-case-study .story-heading p { font-size: 14px; }
   .case-report-reel { --reel-height: clamp(170px, 52vw, 300px); }
 }
+
+.case-figure--crop img { aspect-ratio: var(--figure-ratio); height: auto; object-fit: cover; }

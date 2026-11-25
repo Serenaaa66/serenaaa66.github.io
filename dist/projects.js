@@ -1,3 +1,4 @@
+import {firstOrderProject} from './first-order-study.js';
 import {uropProject} from './urop-study.js';
 import {sustainableProject,feaProject} from './coursework-studies.js';
 // Stable IDs and existing stories are retained. Archive studies remain demos,
@@ -99,5 +100,6 @@ export const projects = [
     headline:'Command the ocean.',lede:'A Computing 2 game project by Siyi Yu. Deploy your fleet, read the battlefield and outmanoeuvre your opponent.',
     sections:[],game:'./assets/games/battleship/index.html'
   },
-  segwayProject
+  segwayProject,
+  firstOrderProject
 ]

@@ -57,9 +57,10 @@ function videoFigure({src,poster,width,height,caption,autoplayOnView=false},inde
   figure.append(frame,legend);return figure;
 }
 
-function galleryFigure({type, poster, src, darkSrc, smallSrc, width, height, caption, wide, maxWidth, background, borderless, inkDrawing, transparentArt, themeInkWidth, darkSurface, viewerSurface, page, diagram, brandMark, autoplayOnView}, index) {
+function galleryFigure({crop, type, poster, src, darkSrc, smallSrc, width, height, caption, wide, maxWidth, background, borderless, inkDrawing, transparentArt, themeInkWidth, darkSurface, viewerSurface, page, diagram, brandMark, autoplayOnView}, index) {
   if(type==='video')return videoFigure({src,poster,width,height,caption,autoplayOnView},index);
   const figure = make('figure', wide ? 'case-figure case-figure--wide' : 'case-figure');
+  if(crop)figure.classList.add('case-figure--crop');
   if(borderless)figure.classList.add('case-figure--floating');
   if(inkDrawing)figure.classList.add('case-figure--ink');
   if(transparentArt)figure.classList.add('case-figure--artwork');
