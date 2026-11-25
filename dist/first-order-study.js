@@ -1,4 +1,4 @@
-// Team background is sourced below. Dates and role are confirmed by the owner.
+// Dates and role are confirmed by the owner.
 const media='./assets/projects/first-order-robotics/';
 export const firstOrderProject={
   id:'first-order-robotics',art:11,demo:false,
@@ -52,9 +52,5 @@ export const firstOrderProject={
     {label:'Sharing the work',title:'Making robotics tangible.',
       intro:'A public demonstration brings the engineering into view: moving robots, a real ball and a shared playing field. The supplied photographs show how the system can become an accessible starting point for conversations about autonomous machines.',
       figures:[{src:media+'public-demo.webp',width:2560,height:1708,wide:true,caption:'Public demonstration · Visitors gather around the robot football pitch'}]}
-    ],resourcesLabel:'Team background & technical references',links:[
-      {label:'Team development story · RS DesignSpark',href:'https://www.rs-online.com/designspark/it-shoots-it-scores-building-robots-that-play-football-at-imperial-college'},
-      {label:'2025 team description paper · RoboCup SSL',href:'https://ssl.robocup.org/wp-content/uploads/2025/04/2025_TDP_First-Order.pdf'},
-      {label:'2025 qualification record · RoboCup SSL',href:'https://ssl.robocup.org/robocups/robocup-2025/robocup-2025-teams/'}
     ]}
 };
