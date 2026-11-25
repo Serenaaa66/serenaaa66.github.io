@@ -14,14 +14,14 @@ export const segwayProject={
   overview:'Beat-synchronised motion and self-balancing control on PyBench',
   description:'A MicroPython robot exploring live beat detection, choreographed motion and 200 Hz self-balancing control.',
   headline:'Listening for rhythm. Finding balance.',
-  lede:'One two-wheeled robot, two Electronics 2 challenges: turn live music into dance moves with stabilizers, then use sensor fusion and PID control to balance and recover from a push.',
+  lede:'Hands-on robotics, from assembling and wiring the PyBench hardware to testing code on a moving robot. Two Electronics 2 challenges connect live beat detection with stabilizer-supported dance, then 200 Hz self-balancing control and recovery from a push.',
   collection:'Electronics 2',
   credits:[['COURSE','Electronics 2'],['BUILT WITH','MicroPython · PyBench']],
   caseStudy:{
     chapters:[
       {
         label:'The platform',title:'One robot. Two real-time challenges.',
-        intro:'Built in MicroPython on the PyBench board for Electronics 2, the robot connects a microphone, IMU and two driven wheels. The same platform becomes a beat-responsive dancer and a self-balancing control system.',
+        intro:'Assembled and wired the Pyboard, IMU, microphone and motor driver on the PyBench platform, then programmed it in MicroPython. Two practical challenges: responding to music with stabilizers, and balancing independently under physical disturbances.',
         notes:[['Challenge 4','Detect music beats and step through a dance routine, with stabilizers.'],['Challenge 5','Estimate tilt and drive the wheels to stay upright and respond to disturbances.']],
         figures:[{src:media+'pybench.webp',width:1000,height:848,caption:'PyBench board · Pyboard, IMU, microphone, motor driver and screen',wide:true,background:'transparent',borderless:true}]
       },
@@ -38,21 +38,22 @@ export const segwayProject={
       },
       {
         label:'Challenge 5 / Self-balancing',title:'Stay upright. Recover from a push.',
-        intro:'The IMU estimates tilt with a complementary filter: 95% gyro-based motion and 5% accelerometer reference. Every 5 milliseconds, a PID loop compares that estimate with upright and corrects both motors. The push test puts that closed-loop response into view.',
-        notes:[['Sensor fusion','The gyroscope follows fast motion; the accelerometer corrects slow drift.'],['200 Hz control','Proportional, integral and derivative terms combine into the wheel command.']],
+        intro:'Fused gyroscope and accelerometer data with a complementary filter to estimate tilt, then ran a PID loop at 200 Hz to correct both motors. Validated closed-loop response and recovery under physical disturbances in a hands-on push test.',
+        notes:[['Sensor fusion','Gyroscope motion estimates are corrected by the accelerometer reference.'],['200 Hz control','A fresh tilt estimate and motor correction every 5 milliseconds.']],
         pid:{
           terms:[
-            {term:'P',name:'Proportional',gain:'p',meaning:'The current tilt error sets the corrective push. A larger error produces a stronger motor command.',excess:'Too much P makes the robot oscillate around upright.'},
-            {term:'I',name:'Integral',gain:'i',meaning:'Accumulated error removes a persistent offset that the proportional term alone cannot correct.',excess:'Too much I causes wind-up and overshoot.'},
-            {term:'D',name:'Derivative',gain:'d',meaning:'The gyroscope rate damps the response as the robot approaches upright, helping it settle instead of swinging past.',excess:'Too much D makes the controller sensitive to sensor noise.'}
+            {term:'P',name:'Proportional',gain:'p',meaning:'Tilt error determines the strength of the corrective motor command.',excess:'Too much P makes the robot oscillate around upright.'},
+            {term:'I',name:'Integral',gain:'i',meaning:'Accumulated error compensates for a persistent lean or offset.',excess:'Too much I causes wind-up and overshoot.'},
+            {term:'D',name:'Derivative',gain:'d',meaning:'Measured rotation rate adds damping to reduce overshoot.',excess:'Too much D makes the controller sensitive to sensor noise.'}
           ],
           tuning:{
-            title:'One gain at a time.',
-            text:'We suspended the robot from elastic cord while tuning, watched how it failed and identified which control term was responsible. Changing one gain at a time helped separate oscillation, steady offset and overshoot, until the robot stood on its own.',
-            rateNote:'The derivative term uses the measured gyroscope rate. This avoids differentiating angle estimates over a very small time step, which can amplify noise.'
+            title:'Troubleshooting hardware in the loop.',
+            text:'Supported the robot with elastic cord and tested it on real hardware. Oscillation, persistent offset and overshoot were diagnostic clues: I traced the physical behaviour back to the P/I/D response, changed one gain at a time, then re-tested until the robot could balance independently.',
+            takeaway:'Debugging the full stack means accounting for friction, centre of gravity and sensor noise as well as PID code. Testing on real hardware, observing failures and tuning the software to address physical behaviour is the mindset I want to bring to on-site robotics deployments.',
+            rateNote:'D uses the measured gyroscope rate rather than differentiating angle estimates, reducing sensitivity to numerical noise.'
           }
         },
-        figures:[{type:'video',src:media+'challenge-5-push.mp4',poster:media+'challenge-5-poster.webp',width:1920,height:1080,wide:true,caption:'Challenge 5 · Self-balancing and recovery during a hands-on push test'}]
+        figures:[{type:'video',src:media+'challenge-5-push.mp4',poster:media+'challenge-5-poster.webp',width:1920,height:1080,wide:true,caption:'Challenge 5 · Testing closed-loop recovery under physical disturbances'}]
       }
     ]
   }

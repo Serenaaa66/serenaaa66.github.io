@@ -73,6 +73,10 @@ test('Segway presents distinct dance and balance evidence with inline, deferred 
     assert.equal(nodes.filter(node=>hasClass(node,'case-video-figure--landscape')).length,2);
     const tuning=nodes.find(node=>hasClass(node,'pid-tuning'));
     assert.ok(tuning.textContent.includes('elastic cord'));
+    assert.ok(tuning.textContent.includes('Troubleshooting hardware in the loop.'));
+    assert.ok(tuning.textContent.includes('What this taught me'));
+    assert.ok(tuning.textContent.includes('on-site robotics deployments'));
+    assert.ok(tuning.textContent.includes('Oscillation, persistent offset and overshoot'));
     assert.equal(h.host.querySelectorAll('img').length,1,'Only the genuine transparent PyBench image is illustrated');
     assert.ok(nodes.some(node=>hasClass(node,'case-figure--floating')));
     h.dispose();assert.ok(videos.every(video=>video.pauses===1));h.dispose();assert.ok(videos.every(video=>video.pauses===1));
