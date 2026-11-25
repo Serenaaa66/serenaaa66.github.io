@@ -3,7 +3,7 @@ const media='./assets/projects/first-order-robotics/';
 export const firstOrderProject={
   id:'first-order-robotics',art:11,demo:false,
   name:'First Order Robotics',discTitle:'First Order Robotics',
-  discSubtitle:'AUTONOMOUS ROBOT FOOTBALL',year:'2025–2027',
+  discSubtitle:'AUTONOMOUS ROBOT FOOTBALL',year:'2024–2027',
   category:'Robotics / Systems Integration',role:'Hardware & Operations',
   cover:media+'football-robots.webp',coverInk:'#f1eee7',
   coverCrop:{fit:'disc',zoom:1,positionX:.5,positionY:.5,background:'#171b1e'},
@@ -12,10 +12,10 @@ export const firstOrderProject={
   overview:'Hardware integration, practical troubleshooting and robotics operations',
   description:'Hands-on robot assembly, soldering, fault-finding and team operations at First Order Robotics.',
   headline:'From hardware to a working system.',
-  lede:'I work in Hardware & Operations at First Order Robotics (2025–2027). The team brings together students at Imperial College London to build autonomous football robots for the RoboCup Small Size League. The challenge spans the whole system: sensing the game, coordinating movement and making hardware respond reliably.',
+  lede:'I work in Hardware & Operations at First Order Robotics (2024–2027). The team brings together students at Imperial College London to build autonomous football robots for the RoboCup Small Size League. The challenge spans the whole system: sensing the game, coordinating movement and making hardware respond reliably.',
   collection:'Competitive Robotics',
   credits:[['CONTRIBUTION','Hardware & Operations'],['FOCUS','Robotics · Systems Integration · Autonomous Control']],
-  detailFields:[['YEAR','2025–2027'],['ROLE','Hardware & Operations'],['TEAM','First Order Robotics'],['INSTITUTION','Imperial College London'],['PLATFORM','RoboCup Small Size League']],
+  detailFields:[['YEAR','2024–2027'],['ROLE','Hardware & Operations'],['TEAM','First Order Robotics'],['INSTITUTION','Imperial College London'],['PLATFORM','RoboCup Small Size League']],
   caseStudy:{chapters:[
     {label:'The challenge',title:'Football as a systems problem.',
       intro:'RoboCup Division B uses a six-a-side format. A shared overhead vision system tracks play, while software turns that information into commands for the robots. Success depends on coordinated decisions and dependable physical execution.',
