@@ -18,16 +18,16 @@ export const firstOrderProject={
   credits:[['FOCUS','Robotics · Systems Integration · Autonomous Control']],
   detailFields:[['TEAM','First Order Robotics'],['INSTITUTION','Imperial College London'],['PLATFORM','RoboCup Small Size League']],
   caseStudy:{chapters:[
-    {label:'01 / The challenge',title:'Football as a systems problem.',
+    {label:'The challenge',title:'Football as a systems problem.',
       intro:'RoboCup Division B uses a six-a-side format. A shared overhead vision system tracks play, while software turns that information into commands for the robots. Success depends on coordinated decisions and dependable physical execution.',
       figures:[{src:media+'robot-open.webp',width:668,height:501,crop:true,maxWidth:900,wide:true,caption:'Inside the robot · Electronics, drivetrain and ball-handling hardware in one compact package'}]},
-    {label:'02 / Hardware',title:'Every subsystem has to work together.',
+    {label:'Hardware',title:'Every subsystem has to work together.',
       intro:'The team describes an omnidirectional platform with dribbling, kicking and chipping mechanisms. Mechanical, electronic, embedded and software work must meet at the interfaces: packaging, power, communication and control.',
       figures:[{src:media+'controller-board.webp',width:861,height:627,caption:'Custom electronics · First Order controller board'},{src:media+'robot-chassis.webp',width:862,height:663,caption:'Mechanical platform · Exposed chassis, wheels and electronics'}]},
-    {label:'03 / Autonomy',title:'From sensing to movement.',
+    {label:'Autonomy',title:'From sensing to movement.',
       intro:'The team’s 2025 technical paper documents hardware revisions and a new control and coordination codebase. Subsequent development described by the team adds onboard vision and telemetry to improve visibility into robot behaviour and support testing.',
       figures:[{src:media+'football-robots.webp',width:757,height:546,wide:true,caption:'On the field · Football robots and the ball during a demonstration'}]},
-    {label:'04 / Sharing the work',title:'Making robotics tangible.',
+    {label:'Sharing the work',title:'Making robotics tangible.',
       intro:'A public demonstration brings the engineering into view: moving robots, a real ball and a shared playing field. The supplied photographs show how the system can become an accessible starting point for conversations about autonomous machines.',
       figures:[{src:media+'public-demo.webp',width:2560,height:1708,wide:true,caption:'Public demonstration · Visitors gather around the robot football pitch'}]}
     ],resourcesLabel:'Team background & technical references',links:[
