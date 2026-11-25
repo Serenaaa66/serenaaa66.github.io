@@ -31,8 +31,8 @@ export const firstOrderProject={
     {label:'Design evolution',title:'Two generations. One integrated platform.',
       intro:'The 2023–24 and 2024–25 team designs show the development of the robot as a complete system. Transparent views reveal how the wheels, electronics and ball-handling mechanisms fit within the cylindrical body.',
       figureGroups:[
-        {label:'2023–24 team design',figures:[{src:media+'robot-design-2023-24.webp',width:958,height:577,wide:true,maxWidth:958,diagram:true,background:'#fff',caption:'2023–24 robot design · Angled and front views of the earlier team platform'}]},
-        {label:'2024–25 team design',figures:[{src:media+'robot-design-2024-25.webp',width:721,height:362,wide:true,maxWidth:721,diagram:true,background:'#fff',caption:'2024–25 robot design · Dimetric and front views of the revised platform'}]}
+        {label:'2023–24 team design',figures:[{src:media+'robot-design-2023-24-transparent.webp',width:958,height:577,wide:true,maxWidth:958,diagram:true,transparentArt:true,borderless:true,caption:'2023–24 robot design · Angled and front views of the earlier team platform'}]},
+        {label:'2024–25 team design',figures:[{src:media+'robot-design-2024-25-transparent.webp',width:721,height:362,wide:true,maxWidth:721,diagram:true,transparentArt:true,borderless:true,caption:'2024–25 robot design · Dimetric and front views of the revised platform'}]}
       ]},
     {label:'Hardware',title:'Every subsystem has to work together.',
       intro:'The team describes an omnidirectional platform with dribbling, kicking and chipping mechanisms. Mechanical, electronic, embedded and software work must meet at the interfaces: packaging, power, communication and control.',
@@ -40,12 +40,12 @@ export const firstOrderProject={
     {label:'Assembly details',title:'Understanding the interfaces.',
       intro:'The wheel module separates into the omniwheel, gear, mounting plates, motor and fasteners. The full robot exploded view puts those modules in context, alongside the electronics stack, quick-release hull, kicker and dribbler.',
       figureGroups:[
-        {label:'Wheel actuator',figures:[{src:media+'wheel-actuator-assembly.webp',width:830,height:961,wide:true,maxWidth:830,diagram:true,background:'#fff',caption:'Wheel actuator assembly · Assembled orientations and exploded component view'}]},
-        {label:'Whole robot',figures:[{src:media+'robot-exploded-assembly.webp',width:1002,height:883,wide:true,maxWidth:1002,diagram:true,background:'#fff',caption:'Robot assembly · Exploded overview of the hull, electronics, drivetrain and ball-handling systems'}]}
+        {label:'Wheel actuator',figures:[{src:media+'wheel-actuator-assembly-transparent.webp',width:830,height:961,wide:true,maxWidth:830,diagram:true,transparentArt:true,borderless:true,caption:'Wheel actuator assembly · Assembled orientations and exploded component view'}]},
+        {label:'Whole robot',figures:[{src:media+'robot-exploded-assembly-transparent.webp',width:1002,height:883,wide:true,maxWidth:1002,diagram:true,transparentArt:true,borderless:true,caption:'Robot assembly · Exploded overview of the hull, electronics, drivetrain and ball-handling systems'}]}
       ]},
     {label:'Ball handling',title:'A closer look at contact.',
       intro:'Three illustrated states show the interaction between the ball and the spring-damper mechanism: the ball leaving, steady contact and an incoming impact. Comparing the positions makes the mechanism’s movement easier to understand.',
-      figures:[{src:media+'ball-spring-damper.webp',width:1182,height:521,wide:true,maxWidth:1182,diagram:true,background:'#fff',caption:'Ball–spring-damper interaction · Ball leaving, steady state and ball crash-in'}]},
+      figures:[{src:media+'ball-spring-damper-transparent.webp',width:1182,height:521,wide:true,maxWidth:1182,diagram:true,transparentArt:true,borderless:true,caption:'Ball–spring-damper interaction · Ball leaving, steady state and ball crash-in'}]},
     {label:'Autonomy',title:'From sensing to movement.',
       intro:'The team’s 2025 technical paper documents hardware revisions and a new control and coordination codebase. Subsequent development described by the team adds onboard vision and telemetry to improve visibility into robot behaviour and support testing.',
       figures:[{src:media+'football-robots.webp',width:757,height:546,wide:true,caption:'On the field · Football robots and the ball during a demonstration'}]},
