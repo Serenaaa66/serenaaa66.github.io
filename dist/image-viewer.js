@@ -1,4 +1,4 @@
-import {mountRoboticsInkOverlay} from './robotics-ink.js';
+import {mountRoboticsInkOverlay} from './robotics-ink.js?v=2';
 import {loadTypography} from './typography.js';
 
 const params = new URLSearchParams(location.search);
