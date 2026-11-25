@@ -11,7 +11,7 @@ import {segwayProject} from './segway-study.js';
 import {occupiedProject} from './occupied-study.js';
 import {sprayProject} from './spray-study.js';
 
-export const projects = [
+const collection = [
   {
     id: 'between-spaces',
     name: 'UROP-Undergraduate Research Oppotunity Programme',
@@ -103,3 +103,7 @@ export const projects = [
   segwayProject,
   firstOrderProject
 ]
+
+// Featured projects lead the collection; all remaining projects retain their order.
+const featured=['balancing-segway','between-spaces','first-order-robotics','in-motion','occupied','ichack','spray'];
+export const projects=[...featured.map(id=>collection.find(project=>project.id===id)),...collection.filter(project=>!featured.includes(project.id))];

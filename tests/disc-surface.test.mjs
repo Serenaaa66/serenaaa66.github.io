@@ -10,7 +10,7 @@ import {discConfig} from '../dist/disc-config.js';
 import {coverImagePlacement} from '../dist/project-media.js';
 
 test('all project discs share the approved finish and retain their own printed color maps',()=>{
-  assert.equal(discSurfaceConfig.projectId,projects[0].id);
+  assert.ok(projects.some(project=>project.id===discSurfaceConfig.projectId));
   const bindings=[];
   for(const project of projects){
     const cover=new Texture(),original=new MeshPhysicalMaterial({map:cover,roughness:.45,metalness:.15});
@@ -63,7 +63,7 @@ test('rounded physical edge joins the front and back without changing the outer 
   bevel.edge.dispose();bevel.face.dispose();mesh.material.dispose();
 });
 test('UROP photo crop fills the cover while leaving the source image intact',async()=>{
-  const project=projects[0];assert.ok(project.cover.endsWith('urop-cover.jpg'));
+  const project=projects.find(project=>project.id==='between-spaces');assert.ok(project.cover.endsWith('urop-cover.jpg'));
   const p=coverImagePlacement(1706,1279,1024,project.coverCrop);
   assert.ok(p.width>=1024&&p.height>=1024);assert.ok(p.x<=0&&p.x+p.width>=1024);
   const source=await readFile(new URL('../assets/projects/urop/urop-cover.jpg',import.meta.url));

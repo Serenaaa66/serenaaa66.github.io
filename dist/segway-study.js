@@ -54,8 +54,6 @@ export const segwayProject={
         },
         figures:[{type:'video',src:media+'challenge-5-push.mp4',poster:media+'challenge-5-poster.webp',width:1920,height:1080,wide:true,caption:'Challenge 5 · Self-balancing and recovery during a hands-on push test'}]
       }
-    ],
-    resourcesLabel:'Course & hardware',
-    links:[{label:'Professor Peter Cheung · Imperial College London',href:'http://www.ee.ic.ac.uk/pcheung/'}]
+    ]
   }
 };

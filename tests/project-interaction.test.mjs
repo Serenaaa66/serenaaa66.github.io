@@ -73,7 +73,7 @@ test('hover coordinates are local to the neighbour despite its offset and angle'
 });
 test('project information stays English and omits role from the interface and printed rim',async()=>{
   for(const p of projects)for(const key of ['name','overview','year','category']){assert.equal(typeof p[key],'string');assert.ok(p[key].length);assert.ok(!/\p{Script=Han}/u.test(p[key]));}
-  assert.equal(projects[0].overview,'Crash-sensing software tested at JLR and 300 MADYMO impact simulations');
+  assert.equal(projects.find(project=>project.id==='between-spaces').overview,'Crash-sensing software tested at JLR and 300 MADYMO impact simulations');
   const html=await readFile(new URL('../dist/index.html',import.meta.url),'utf8');
   const row=await readFile(new URL('../dist/animorio/row-of-discs.js',import.meta.url),'utf8');
   assert.doesNotMatch(html,/data-project-field="role"/);
