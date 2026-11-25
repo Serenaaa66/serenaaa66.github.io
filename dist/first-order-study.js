@@ -1,22 +1,21 @@
-// Team background is sourced below; individual responsibilities and dates are
-// intentionally omitted until supplied by the portfolio owner.
+// Team background is sourced below. Dates and role are confirmed by the owner.
 const media='./assets/projects/first-order-robotics/';
 export const firstOrderProject={
   id:'first-order-robotics',art:11,demo:false,
   name:'First Order Robotics',discTitle:'First Order Robotics',
-  discSubtitle:'AUTONOMOUS ROBOT FOOTBALL',year:'—',
-  category:'Robotics / Systems Integration',role:'Student-led team project',
+  discSubtitle:'AUTONOMOUS ROBOT FOOTBALL',year:'2025–2027',
+  category:'Robotics / Systems Integration',role:'Hardware & Operations',
   cover:media+'robot-open.webp',coverInk:'#f1eee7',
   coverCrop:{fit:'disc',zoom:1,positionX:.5,positionY:.5,background:'#171b1e'},
   hero:media+'robot-open.webp',heroAlt:'An open First Order football robot revealing its electronics, drive system and identification plate',
   heroFit:'contain',heroBackground:'#171b1e',
   overview:'Autonomous football robots built at Imperial College London',
   description:'A student-led robotics platform connecting mechanical design, electronics and autonomous control.',
-  headline:'Small robots. A whole-team challenge.',
-  lede:'First Order Robotics brings together students at Imperial College London to build autonomous football robots for the RoboCup Small Size League. The challenge spans the whole system: sensing the game, coordinating movement and making hardware respond reliably.',
+  headline:'From hardware to a working system.',
+  lede:'I work in Hardware & Operations at First Order Robotics (2025–2027). The team brings together students at Imperial College London to build autonomous football robots for the RoboCup Small Size League. The challenge spans the whole system: sensing the game, coordinating movement and making hardware respond reliably.',
   collection:'Competitive Robotics',
-  credits:[['FOCUS','Robotics · Systems Integration · Autonomous Control']],
-  detailFields:[['TEAM','First Order Robotics'],['INSTITUTION','Imperial College London'],['PLATFORM','RoboCup Small Size League']],
+  credits:[['CONTRIBUTION','Hardware & Operations'],['FOCUS','Robotics · Systems Integration · Autonomous Control']],
+  detailFields:[['YEAR','2025–2027'],['ROLE','Hardware & Operations'],['TEAM','First Order Robotics'],['INSTITUTION','Imperial College London'],['PLATFORM','RoboCup Small Size League']],
   caseStudy:{chapters:[
     {label:'The challenge',title:'Football as a systems problem.',
       intro:'RoboCup Division B uses a six-a-side format. A shared overhead vision system tracks play, while software turns that information into commands for the robots. Success depends on coordinated decisions and dependable physical execution.',
