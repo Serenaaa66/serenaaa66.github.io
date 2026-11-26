@@ -17,14 +17,14 @@ export const firstOrderProject={
   credits:[['CONTRIBUTION','Hardware & Operations'],['FOCUS','Robotics · Systems Integration · Autonomous Control']],
   detailFields:[['YEAR','2024–2027'],['ROLE','Hardware & Operations'],['TEAM','First Order Robotics'],['INSTITUTION','Imperial College London'],['PLATFORM','RoboCup Small Size League']],
   caseStudy:{chapters:[
-    {label:'The challenge',title:'Football as a systems problem.',
-      intro:'RoboCup Division B uses a six-a-side format. A shared overhead vision system tracks play, while software turns that information into commands for the robots. Success depends on coordinated decisions and dependable physical execution.',
+    {label:'The challenge',title:'Integrating a complete robotic system.',
+      intro:'RoboCup Division B uses a six-a-side format. A shared overhead vision system tracks play, while software turns that information into commands for the robots. RoboCup requires integration of hardware, embedded software and control algorithms under real-world constraints.',
       figures:[{src:media+'robot-open.webp',width:668,height:501,crop:true,maxWidth:900,wide:true,caption:'Inside the robot · Electronics, drivetrain and ball-handling hardware in one compact package'}]},
     {label:'My contribution',title:'Build it. Test it. Keep it running.',
       intro:'My role connects hands-on hardware work with the operations that support the team. I assemble and solder robot hardware, investigate faults and support testing, alongside procurement, inventory, test records and event coordination.',
       notes:[
-        ['Hardware build & integration','Assembled mechanical and electronic subsystems, soldered connections and supported prototype builds. Worked across component interfaces so the physical robot could be brought together and tested as a complete system.'],
-        ['Troubleshooting & testing','Investigated hardware issues through hands-on inspection and testing, checked connections and components, and helped isolate faults. Recorded observations and re-tested changes to support a repeatable build–test–improve cycle.'],
+        ['Hardware build & integration','Executed mechanical and electronic assembly, including soldering, wiring and sensor calibration, to support physical robustness and system reliability.'],
+        ['Troubleshooting & testing','Diagnosed hardware faults through systematic inspection and electrical testing; implemented component-level fixes, re-tested the system and documented root causes to inform future deployments.'],
         ['Operations & coordination','Supported component purchasing and stock organisation, maintained test records and coordinated practical tasks and activities with teammates. Helped connect the availability of parts, build work and testing needs.'],
         ['Public demonstrations','Supported robotics activities and demonstrations, helping prepare hardware and coordinate the practical work around the event.']
       ]},
@@ -68,6 +68,8 @@ export const firstOrderProject={
       ]},
     {label:'Sharing the work',title:'Making robotics tangible.',
       intro:'A public demonstration brings the engineering into view: moving robots, a real ball and a shared playing field. The supplied photographs show how the system can become an accessible starting point for conversations about autonomous machines.',
-      figures:[{src:media+'public-demo.webp',width:2560,height:1708,wide:true,caption:'Public demonstration · Visitors gather around the robot football pitch'}]}
+      figures:[{src:media+'public-demo.webp',width:2560,height:1708,wide:true,caption:'Public demonstration · Visitors gather around the robot football pitch'}]},
+    {label:'Reflection',title:'Engineering Takeaway',
+      intro:'Working on a multi-agent robotic platform taught me that reliable deployment depends on getting the physical layer right. I learned to bridge the gap between design files and physical reality, from soldering loose wires on the field to debugging control logic. This hands-on experience across the engineering lifecycle has prepared me to install, maintain and troubleshoot robotic systems at Paddington Robotics.'}
     ]}
 };
